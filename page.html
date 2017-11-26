@@ -34,7 +34,7 @@
 		<!-- this is the project div to create the grid variation for -->
 		<span class="together">
 			<img src="{{profilePic}}" class="grid">
-			<button class="likeBtn">Like</button>
+			<button class="likeBtn" onclick="dada()">Like</button>
 		</span>
 	{{else}}
 	<div class="project" id="project{{index}}">
@@ -54,13 +54,9 @@
 
 	</div>
 <script>
-	$('.likeBtn').click(function() {
-		console.log("like button clicked");
-		// tracker code here, refer to slide #26
-		tracker.send('event', 'like-button', 'click');
-	});
 	function dada() {
 		console.log("It works!");
+		tracker.send('event', 'like-button', 'click');
 	}
 </script>
 	<script src="https://code.jquery.com/jquery.js"></script>
