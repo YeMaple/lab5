@@ -41,7 +41,7 @@
 		<a href="#" class="thumbnail">
 			<img src="{{profilePic}}" alt="Lorem Pixel image" class="img">
 			<p>{{title}}</p>
-			<div class="like"><button class="btn btn-default likeBtn">Like</button></div>
+			<div class="like"><button class="btn btn-default likeBtn" onclick="dada()">Like</button></div>
 		</a>
 	</div>
 	{{/if}}
@@ -59,6 +59,9 @@
 		// tracker code here, refer to slide #26
 		tracker.send('event', 'like-button', 'click');
 	});
+	function dada() {
+		console.log("It works!");
+	}
 </script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
