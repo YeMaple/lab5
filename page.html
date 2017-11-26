@@ -56,7 +56,12 @@
 <script>
 	function dada() {
 		console.log("It works!");
-		tracker.send('event', 'like-button', 'click');
+		if ("ga" in window) {
+		 tracker = ga.getAll()[0];
+		 if (tracker)
+		 tracker.send('event', 'like-button', 'click');
+		}
+		// tracker.send('event', 'like-button', 'click');
 	}
 </script>
 	<script src="https://code.jquery.com/jquery.js"></script>
