@@ -24,8 +24,8 @@ $(document).ready(function() {
 
 	var parentDiv = $("#templatedProjects");
 
-	var choice = JSON.parse(localStorage.getItem("grid"));
-	
+	var choice = JSON.parse(localStorage.getItem("showAlternate"));
+
 	// start with a simple template
 	simpleData.grid = choice;
 	var html = template(simpleData);
